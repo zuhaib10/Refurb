@@ -34,7 +34,7 @@ const Faq = () => {
   return (
     <div className="bg-[rgba(0, 6, 69, 0.03)] py-20">
       <div className="container mx-auto text-center" role="region" aria-label="Frequently Asked Questions section">
-        <Image src={msg} alt="Icon representing FAQs" width={50} height={50} className="mx-auto" />
+        <Image src={msg} alt="Icon representing FAQs" width={50}  className="mx-auto" />
         <h2 className="font-semibold text-2xl md:text-3xl py-3 ">Frequently Asked Questions</h2>
         <h5 className="text-[#828282] text-sm md:text-lg pb-4 md:pb-10">Use customer data to build great and solid product experiences that convert.</h5>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4" role="list">

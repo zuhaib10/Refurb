@@ -94,7 +94,7 @@ const WhyUs = () => {
             {details.map((detail, index) => (
               <div key={index} className="flex items-center flex-col">
                 <div className="bg-slate-200 p-4 my-3 rounded-full">
-                  <Image src={crown} alt="Recognition Badge" width={35} height={35} />
+                  <Image src={crown} alt="Recognition Badge" width={35}  />
                 </div>
                 <span>{detail}</span>
               </div>
@@ -113,7 +113,7 @@ const WhyUs = () => {
           <h3 className="text-center text-md my-10">Try branding with us</h3>
           <div className="flex items-center justify-center gap-12 flex-wrap">
             {brands.map((brand, index) => (
-              <Image key={index} src={brand.image} alt={`Brand logo of ${brand.name}`} width={brand.size} height={brand.size} />
+              <Image key={index} src={brand.image} alt={`Brand logo of ${brand.name}`} width={brand.size} />
             ))}
           </div>
         </div>

@@ -25,6 +25,10 @@ const Form: FC<FormProps> = ({}) => {
     setLoading(true);
 
     setTimeout(() => {
+      fetch("/api/form", {
+        method: "POST",
+        body: JSON.stringify(form),
+      });
       setLoading(false);
       setLoaded(true);
 
@@ -97,7 +101,7 @@ const Form: FC<FormProps> = ({}) => {
         </div>
       </div>
       <button disabled={loading || loaded} type="submit" className="w-full p-4 rounded-md bg-[#5E3DB1] text-white font-semibold " aria-label="Get Price for your phone">
-        {loading ? <Loader2 className="animate-spin m-auto " /> : loaded ? <CheckCircle2 className="m-auto"/> : "Get Price"}
+        {loading ? <Loader2 className="animate-spin m-auto " /> : loaded ? <CheckCircle2 className="m-auto" /> : "Get Price"}
       </button>
     </form>
   );

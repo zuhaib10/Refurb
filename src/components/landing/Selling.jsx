@@ -34,7 +34,7 @@ const Selling = () => {
             </p>
           </div>
           <div className="lg:basis-6/12">
-            <Image src={selling} alt="Illustration of the selling process" width={1000} height={1000} />
+            <Image src={selling} alt="Illustration of the selling process" width={1000}  />
           </div>
         </div>
         <div className="lg:flex justify-between gap-10 hidden">

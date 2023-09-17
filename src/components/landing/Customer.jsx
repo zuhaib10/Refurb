@@ -51,7 +51,7 @@ const Customer = () => {
             prompt. A trustworthy solution for selling used devices. Highly recommended!
           </h6>
           <div className="flex items-center gap-5 mt-10" aria-label="Customer details">
-            <Image src={nisha} alt="Picture of Nisha Gupta" width={50} height={50} />
+            <Image src={nisha} alt="Picture of Nisha Gupta" width={50}/>
             <div>
               <h4 className="text-md">Nisha Gupta</h4>
               <h6 className="text-[#828282] text-sm">Software Engineer</h6>
