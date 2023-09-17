@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+.font-outline-2 {
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.224);
+}
+input:focus {
+  outline: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --black-rgb: 0, 0, 0;
@@ -23,6 +38,6 @@ body {
 }
 
 .grad {
-  background: linear-gradient(176deg, #a0cd59 -14.01%, #84e5ce 52.17%, #57cdf2 118.23%);
+  background: linear-gradient(176deg, #a1cd596a -14.01%, #84e5ceac 52.17%, #57cef293 118.23%);
   height: 100vh;
 }
