@@ -13,7 +13,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
   //   { name: "Blogs", url: "/blogs" },
   // ];
   return (
-    <main className="container flex justify-between items-center border-1 border-b-2 border-rose-500 p-6 m-auto ">
+    <main className="container flex justify-between items-center border-1 border-b-2  p-6 m-auto ">
       <div>
         <Link href="/">
           <Image src={brand} alt="company logo" width={80} />
