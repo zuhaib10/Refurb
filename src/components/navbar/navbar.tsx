@@ -13,7 +13,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
   //   { name: "Blogs", url: "/blogs" },
   // ];
   return (
-    <main className="container flex justify-between items-center p-8 m-auto ">
+    <main className="container flex justify-between items-center border-1 border-b-2 border-rose-500 p-6 m-auto ">
       <div>
         <Link href="/">
           <Image src={brand} alt="company logo" width={80} />
@@ -27,7 +27,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
         ))}
       </div> */}
       <div>
-        <button className=" bg-lime-500 py-2 px-4 font-medium">sell now</button>
+        <button className=" rounded-[4px] font-[400] capitalize bg-[#A0CD59]	 py-2 px-4 ">sell now</button>
       </div>
     </main>
   );
