@@ -16,7 +16,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
     <main className="container flex justify-between items-center p-8 m-auto ">
       <div>
         <Link href="/">
-          <Image src={brand} alt="company logo" width={100} />
+          <Image src={brand} alt="company logo" width={80} />
         </Link>
       </div>
       {/* <div className="flex gap-12">
