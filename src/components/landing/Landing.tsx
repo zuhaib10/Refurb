@@ -1,10 +1,10 @@
-import { FC } from "react";
+import Form from "@/components/form/Form";
 import Image from "next/image";
+import { FC } from "react";
 import apple from "/public/assets/apple.svg";
 import mi from "/public/assets/mi.svg";
-import vivo from "/public/assets/vivo.svg";
 import samsung from "/public/assets/samsung.svg";
-import Form from "@/components/form/Form";
+import vivo from "/public/assets/vivo.svg";
 
 interface Landing {}
 
@@ -12,44 +12,44 @@ const Landing: FC<Landing> = ({}) => {
   let brands = [
     {
       icon: apple,
-      size: 70,
+      size: 45,
       name: "Apple",
     },
     {
       icon: mi,
-      size: 60,
+      size: 46,
       name: "Xiaomi",
     },
     {
       icon: samsung,
-      size: 150,
+      size: 120,
       name: "Samsung",
     },
     {
       icon: vivo,
-      size: 150,
+      size: 100,
       name: "Vivo",
     },
   ];
 
   return (
-    <main role="main" className="container m-auto flex items-center h-5/6">
-      <div className="max-w-2xl">
-        <h1 className="text-5xl font-bold leading-normal">
-          Get Instant Cash for Your Used Smartphones - <span className="text-lime-500">Easy Process!</span>
+    <main role="main" className="container m-auto grid  grid-cols-2 gap-x-10 items-center ">
+      <div className="max-w-2xl pt-32 pb-32">
+        <h1 className="text-[38px] font-bold leading-normal text-[#02213A]" >
+          Get Instant Cash for Your Used Smartphones - <span className="text-[#86af44]">Easy <br /> Process!</span>
         </h1>
-        <h2 className="text-xl my-10 leading-normal">
+        <h2 className="text-[md] my-10 leading-normal">
           Secure Transactions and Hassle-Free Pickup
           <br /> Services Available!
         </h2>
-        <div className="flex gap-10 items-center">
+        <div className="flex gap-10 items-center ">
           {brands.map((brand, index) => (
             <Image key={index} src={brand.icon} alt={`${brand.name} logo`} width={brand.size} />
           ))}
-          <span className="text-xl font-medium">& more</span>
+          <span className="text-md font-[400]">& more</span>
         </div>
       </div>
-      <div className="basis-5/12 relative top-32 left-32">
+      <div className="basis-5/12 relative top-24 ml-auto w-[85%]">
         <Form />
       </div>
     </main>

@@ -1,10 +1,7 @@
 "use client";
-import { FC, useState } from "react";
-import { Info } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { Search } from "lucide-react";
-import { Loader2 } from "lucide-react";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Info, Loader2, Search } from "lucide-react";
+import { FC, useState } from "react";
 
 interface FormProps {}
 
@@ -42,7 +39,7 @@ const Form: FC<FormProps> = ({}) => {
 
   return (
     <form aria-label="Sell Your Phone Form" className="rounded-xl p-10 relative flex flex-col gap-2 bg-[#FAFAFA] border border-[#DADADA] " onSubmit={handleFormSubmit}>
-      <h5 className="absolute bg-[#5E3DB1] text-white p-2 -top-5 left-0 right-0 w-[177px] mx-auto">Sell Your Phone Now</h5>
+      <h5 className="absolute bg-[#5E3DB1] text-center text-white p-2 -top-5 left-0 right-0 w-[40%] mx-auto px-4">Sell Your Phone Now</h5>
       <div className="flex items-center gap-5 ">
         <div className="flex flex-col flex-grow">
           <label htmlFor="name" className="text-sm">
@@ -100,7 +97,7 @@ const Form: FC<FormProps> = ({}) => {
           <input type="text" name="coupon" id="coupon" className="border p-3.5 my-2 rounded-md text-sm" placeholder="Enter Coupon Code" aria-placeholder="Enter Coupon Code" />
         </div>
       </div>
-      <button disabled={loading || loaded} type="submit" className="w-full p-4 rounded-md bg-[#5E3DB1] text-white font-semibold " aria-label="Get Price for your phone">
+      <button disabled={loading || loaded} type="submit" className="w-full p-4 mt-4 rounded-md bg-[#5E3DB1] text-white font-semibold " aria-label="Get Price for your phone">
         {loading ? <Loader2 className="animate-spin m-auto " /> : loaded ? <CheckCircle2 className="m-auto" /> : "Get Price"}
       </button>
     </form>

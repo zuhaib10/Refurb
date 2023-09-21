@@ -1,17 +1,16 @@
-import React from "react";
 import { Star } from "lucide-react";
-import nisha from "~/img/nisha.png";
 import Image from "next/image";
+import nisha from "~/img/nisha.png";
 
 const Customer = () => {
   return (
-    <div className="bg-[#E2F0FE] py-10">
+    <div className="bg-[#E2F0FE] py-20">
       <div className="container mx-auto flex flex-col lg:flex-row lg:items-center text-center lg:text-left gap-5">
         <div className="lg:basis-6/12">
-          <h2 className="bg-black p-1 text-sm rounded-full text-white uppercase w-32 mx-auto lg:mx-0 text-center" aria-label="Section Title: Why trust us">
+          <span className="bg-black py-2 px-5 text-[13px] rounded-full text-white uppercase mx-auto lg:mx-0 text-center" aria-label="Section Title: Why trust us">
             why trust us
-          </h2>
-          <h1 className="text-4xl font-bold pt-3 leading-normal">
+          </span>
+          <h1 h1 className = "text-[42px] my-4 font-bold pt-3 leading-normal text-[#02213A]" >
             Hear From Our <br />
             Satisfied Customers
           </h1>
