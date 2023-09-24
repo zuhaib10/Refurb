@@ -1,17 +1,16 @@
-import React from "react";
-import crown from "~/assets/crown.svg";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import apple from "~/assets/apple.svg";
 import asus from "~/assets/asus.svg";
+import crown from "~/assets/crown.svg";
 import mi from "~/assets/mi.svg";
 import moto from "~/assets/moto.svg";
 import nokia from "~/assets/nokia.svg";
+import oneplus from "~/assets/oneplus.svg";
 import oppo from "~/assets/oppo.svg";
 import realme from "~/assets/realme.svg";
 import samsung from "~/assets/samsung.svg";
 import vivo from "~/assets/vivo.svg";
-import oneplus from "~/assets/oneplus.svg";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 
 const WhyUs = () => {
   const details = ["Competitive Offers", "Effortless Process", "Environmentally Responsible", "Secure Transactions", "Local Pickup", "Skilled Assessment"];
@@ -111,9 +110,22 @@ const WhyUs = () => {
         </div>
         <div>
           <h3 className="text-center text-md my-10">Try branding with us</h3>
-          <div className="flex items-center justify-center gap-12 flex-wrap">
+          <div className="grid  grid-cols-7 items-center justify-center  gap-12 ">
             {brands.map((brand, index) => (
-              <Image key={index} src={brand.image} alt={`Brand logo of ${brand.name}`} width={brand.size} />
+              < Image key = {
+                index
+              }
+              className = " mx-auto"
+              src = {
+                brand.image
+              }
+              alt = {
+                `Brand logo of ${brand.name}`
+              }
+              width = {
+                brand.size
+              }
+              />
             ))}
           </div>
         </div>

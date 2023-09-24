@@ -33,16 +33,16 @@ const Landing: FC<Landing> = ({}) => {
   ];
 
   return (
-    <main role="main" className="container m-auto grid  grid-cols-2 gap-x-10 items-center ">
-      <div className="max-w-2xl pt-32 pb-32">
-        <h1 className="text-[38px] font-bold leading-normal text-[#02213A]" >
-          Get Instant Cash for Your Used Smartphones - <span className="text-[#86af44]">Easy <br /> Process!</span>
+    <main role="main" className="container m-auto grid  sm:grid-cols-2 grid-cols-1 gap-x-10 items-center ">
+      <div className="max-w-2xl pt-24 pb-32">
+        <h1 className="text-[40px] font-bold w-[90%] leading-normal text-[#02213A]" >
+          Get Instant Cash for Your Used Smartphones - <span className="text-[#86af44]">Easy Process!</span>
         </h1>
-        <h2 className="text-[md] my-10 leading-normal">
+        <h2 className="text-[18px] my-10 leading-normal">
           Secure Transactions and Hassle-Free Pickup
           <br /> Services Available!
         </h2>
-        <div className="flex gap-10 items-center ">
+        <div className="flex gap-10 items-center mt-8">
           {brands.map((brand, index) => (
             <Image key={index} src={brand.icon} alt={`${brand.name} logo`} width={brand.size} />
           ))}

@@ -1,5 +1,7 @@
 import { Star } from "lucide-react";
 import Image from "next/image";
+
+
 import nisha from "~/img/nisha.png";
 
 const Customer = () => {
